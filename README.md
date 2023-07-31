@@ -63,20 +63,20 @@ Due to constant Discord terminations I will not be making a new support server. 
 
 ## Bug Errors / Improvements?
 - Things to add
-    - :yellow_square: = Working On it
-    - :red_square: = Not Working
-    - :green_square: = Working
+    - 🟡 = Working On it
+    - 🔴 = Not Working
+    - 🟢 = Working
 
 
-- :yellow_square: Lock Desktop screen
-- :red_square: Decrypted Cookies
-- :red_square: Webcam pic
-- :yellow_square: Injection
-- :green_square: IP Info
-- :green_square: All Tokens
-- :green_square: Passwords
-- :green_square: WIFI passwords
-- :green_square: System Info
+- 🔴 Lock Desktop screen
+- 🔴 Decrypted Cookies
+- 🔴 Webcam pic
+- 🟢 Injection
+- 🟢 IP Info
+- 🟢 All Tokens
+- 🟢 Passwords
+- 🟢 WIFI passwords
+- 🟢 System Info
 
 -   Any Bugs Please Join the [Tele](https://t.me/+HyVCbHaErR1lYTlk)
 -   Join the [Discord](https://discord.gg/fUeh4NhT)
