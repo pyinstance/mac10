@@ -1,0 +1,12 @@
+discord
+PIL-tools
+pywin32
+pycryptodome
+cryptography
+requests
+sqlite3
+json
+tempfile
+re
+uuid
+os.path
