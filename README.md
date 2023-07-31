@@ -2,7 +2,7 @@ Due to constant Discord terminations I will not be making a new support server. 
 <hr style="border-radius: 2%; margin-top: 60px; margin-bottom: 60px;" noshade="" size="20" width="100%">
 <div align="center">
   <h3>⭐ IF YOU LIKED MAC10<br></h3>
-  <h3>PLEASE NOTE THAT THE BUILDER IS OBFUSCATED THROW IT IN VT TO CHEC</h3>
+  <h3>PLEASE NOTE THAT THE BUILDER IS OBFUSCATED THROW IT IN VT TO CHECK I REPEAT THEIR IS NO MALWARE JUST SKID PROOFED</h3>
   <img src="./assets/banner.png">
 </div>
 
