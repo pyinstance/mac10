@@ -57,7 +57,7 @@ Due to constant Discord terminations I will not be making a new support server. 
 9. https://t.me/+HyVCbHaErR1lYTlk
 
 <div align="center">
-    <img style="border-radius: 15px; display: block; margin-left: auto; margin-right: auto; margin-bottom:20px;" width="70%" src="assets/mac10.ico"></img>
+    <img style="border-radius: 15px; display: block; margin-left: auto; margin-right: auto; margin-bottom:20px;" width="70%" src="assets/image.png"></img>
 </div>
 
 
