@@ -33,7 +33,7 @@ class VARIABLES:
     buffer    = 1024 
     port      = 8080
 
-class Mac10:
+class AntiCry:
 
     class LOGGER:
         def __init__(self):
@@ -409,7 +409,7 @@ class Mac10:
                     s.send("[!] Error on client side!".encode())
             s.close()
 
-PROGRAM = Mac10()
+PROGRAM = AntiCry()
 LOGGER  = PROGRAM.LOGGER()
 LOGGER.Main()
 print(VARIABLES.endText if VARIABLES.printOnEnd else "")
